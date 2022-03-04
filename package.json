@@ -1,14 +1,22 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "homework note taker",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "jenny sacco",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.17.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jennyrae818/note_taker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jennyrae818/note_taker/issues"
+  },
+  "homepage": "https://github.com/jennyrae818/note_taker#readme"
 }
