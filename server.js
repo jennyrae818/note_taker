@@ -19,22 +19,22 @@ app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
-// Getting the repsonse for notes.html page 
+// GET the repsonse for notes.html page (reading) 
 app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
 
-// Getting the response for the 'notes'/db.json file
+// GET the response for the db.json file (reading)
 app.get('/api/notes', (req, res) =>
     res.json(notes)
 );
 
-// Getting the id's from the 'notes'/db.json file 
+// GET the id's/notes from the db.json file 
 app.get('/api/notes:id', (req, res) =>
     res.json(notes)
 );
 
-// Posting/pushing the notes with the random number id's to the 'notes'/db.json file
+// Posting/pushing recieves the new note to save to the db.json file with a random number id
 app.post('/api/notes', (req, res) => {
     req.body.id = Math.floor(Math.random()*10000000)
     notes.push(req.body)
